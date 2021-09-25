@@ -1,9 +1,3 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body{
   min-height:100vh;
   background-color: #161616;
@@ -36,19 +30,6 @@ body{
     bottom: 0;
   }
 
-
-
-
-header{
-  background-color: #FFF;
-  height: 50px;
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
   .profileCont{
     width: 300px;
 
@@ -169,14 +150,13 @@ header{
 
 
 .pP{
-  height: 2200px;
   background-image: url(../files/backImgP4.jpg);
   background-size: cover;
 }
   .plusesPlace{
     width: 1000px;
     max-width: 100%;
-    margin:200 auto 100 auto;
+    margin: 0 auto;
     height: 1900px;
     display: flex;
     flex-direction: column;
@@ -352,30 +332,3 @@ header{
       text-decoration: none;
       font-size: 20px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**/
