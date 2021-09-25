@@ -1,0 +1,381 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  min-height:100vh;
+  background-color: #161616;
+  font-family: 'Roboto', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHigh{
+  height: 1200px;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background: transparent;
+}
+  #waveHigh{
+    position: absolute;
+    top: 0;
+  }
+.sectionSub{
+  height: 1000px;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background: transparent;
+}
+  #waveSub{
+    position: absolute;
+    bottom: 0;
+  }
+
+
+
+
+header{
+  background-color: #FFF;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+  .profileCont{
+    width: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+    #openProfile{
+      color: #3995A4;
+    }
+
+
+
+
+.dP{
+  height: 600px;
+  /*background-color: #B6E6FF;*/
+  background-image: url(../files/head1.png);
+  background-size: cover;
+  /*image: blur(4px);*/
+}
+  .downloadPlace{
+    width: 1000px;
+    max-width: 100%;
+    margin:0 auto;
+    top: 50px;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    #nameArdugraph{
+      margin: 20px;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 150px;
+      font-weight: 900;
+      color: #fff;
+      /*text-shadow: #000 0px -5px 5px;*/
+    }
+
+    #downloadLinkTop{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+      background: #96969680;
+      border: 3px solid #FF22A4;
+      font-size: 20px;
+      font-weight: 300;
+      width: 200px;
+      height:60px;
+      text-align: center;
+      transition: 0.1s;
+      text-decoration: none;
+      margin: 20px;
+    }
+    #downloadLinkTop:hover{
+      width: 220px;
+      font-size: 18px;
+      background: #ffffff7f;
+      border: 3px solid #81F2FF;
+      cursor: pointer;
+    }
+
+
+
+
+.pV{
+  height: 400px;
+  background-color: #fff;
+}
+  .previewVideo{
+    width: 1100px;
+    max-width: 100%;
+    margin:0 auto;
+    padding-top: 25px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+    #video{
+      height: 350px;
+      border-radius: 20px;
+    }
+    #video::-webkit-media-controls-volume-slider {
+      display:none;
+    }
+    #video::-webkit-media-controls-mute-button {
+      display:none;
+    }
+    .welcomeToArdugraph{
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+    }
+      #welcome{
+        font-size: 40px;
+        font-weight: 300;
+        text-align: right;
+      }
+      #toArdugraph{
+        font-size: 50px;
+        font-weight: 400;
+        text-align: right;
+        background: linear-gradient(45deg, #950ebd 33%, #ff7934 66%, #FF22A4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+
+
+
+.pP{
+  height: 2200px;
+  background-image: url(../files/backImgP4.jpg);
+  background-size: cover;
+}
+  .plusesPlace{
+    width: 1000px;
+    max-width: 100%;
+    margin:200 auto 100 auto;
+    height: 1900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+    .plusPlace{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .plusPlaceHigh{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+      .textPlusesHigh{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 400;
+        background: linear-gradient(45deg, #ff0ebd 13%, #0D78BC 66%, #FF22A4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+        #plusesTexts1{
+          text-transform: uppercase;
+          background: linear-gradient(45deg, #19979c 13%, #0D78BC 66%, #19979c);
+          font-weight: 300;
+          margin-right: 100px;
+          font-size: 35px;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-top: 50px;
+        }
+        #plusesTexts2{
+          text-align: right;
+          text-transform: uppercase;
+          background: linear-gradient(45deg, #19979c 13%, #0D78BC 66%, #19979c);
+          font-weight: 300;
+          margin-left: 100px;
+          font-size: 35px;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-top: 50px;
+        }
+        #plusesTextsPar1{
+          text-align: justify;
+          color: #fff;
+          font-weight: 300;
+          margin-right: 100px;
+          font-size: 25px;
+          margin-top: 20px;
+
+        }
+        #plusesTextsPar2{
+          text-align: justify;
+          color: #fff;
+          font-weight: 300;
+          margin-left: 100px;
+          font-size: 25px;
+          margin-top: 20px;
+        }
+        #imgPlus1{
+          height: 400px;
+          /*box-shadow: 3px 3px 5px #202020;*/
+          border-radius: 30px;
+        }
+        #imgPlus2{
+          height: 400px;
+          border-radius: 30px;
+        }
+        #imgPlus3{
+          height: 400px;
+          border-radius: 30px;
+        }
+        #imgPlus4{
+          height: 400px;
+          border-radius: 30px;
+        }
+
+
+
+
+.dP2{
+  height: 500px;
+  background: #82d1ff;
+}
+  .downloadPlace2{
+    width: 1200px;
+    max-width: 100%;
+    margin:0 auto;
+    height: 500px;
+  }
+    .downloadPlace2Cont{
+      height: 400px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+      #downloadH2{
+        font-size: 40px;
+        font-weight: 900;
+        color: #fff;
+      }
+      #downloadLinkBottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 300px;
+        height: 200px;
+        border: 6px dashed #fff;
+        border-radius: 50px;
+        border-image-slice: 1;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        background: linear-gradient(45deg, #FF509A 33%, #0D61BC 66%, #27D6B3);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.4s;
+      }
+      #downloadLinkBottom:hover{
+        cursor: pointer;
+        
+        width: 400px;
+        font-size: 28px;
+        border-radius: 70px;
+        background: #ffffff7f;
+
+        text-align: center;
+        background: linear-gradient(45deg, #FF509A 33%, #0D61BC 66%, #27D6B3);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      #downloadSup2{
+        height: 70px;
+        font-size: 20px;
+        background: linear-gradient(45deg, #3995A4 33%, #0D61BC 66%, #FF22A4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+
+
+
+/* footer{
+} */
+  .foot{
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+    .footItem{
+      color: #81F2FF;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
