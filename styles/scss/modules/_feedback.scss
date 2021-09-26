@@ -1,0 +1,163 @@
+.feedback {
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.slider {
+    max-width: 960px;
+  }
+
+  /* дополнительные стили для этого примера */
+  .slider__items {
+    counter-reset: slide;
+  }
+
+  .slider__item {
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    counter-increment: slide;
+  }
+
+  .slider__item::after {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+  }
+
+  .slider__item:nth-child(1) {
+    background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+  }
+
+  .slider__item:nth-child(2) {
+    background: linear-gradient(to right, #dd1818, #333333);
+  }
+
+  .slider__item:nth-child(3) {
+    background: linear-gradient(to right, #093028, #237a57);
+  }
+
+  .slider__item:nth-child(4) {
+    background: linear-gradient(to right, #243B55, #141E30);
+  }
+
+  .slider__item_inner {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 36px;
+    bottom: 36px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .slider__item_img {
+    flex: 0 0 80px;
+    max-width: 80px;
+  }
+
+  .slider__item_testimonial {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  @media (min-width: 576px) {
+    .slider__item {
+      height: 250px;
+    }
+
+    .slider__item_inner {
+      flex-direction: row;
+    }
+
+    .slider__item_testimonial {
+      margin-left: 15px;
+    }
+
+    .slider__item_img {
+      flex: 0 0 150px;
+      max-width: 150px;
+    }
+
+    .slider__item_testimonial {
+      text-align: left;
+    }
+  }
+
+  .slider__item_name {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .slider__item_post {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .slider__item_text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+.slider {
+
+		&__wrapper {
+		}
+
+		&__items {
+		}
+
+		&__item {
+
+			&_inner {
+			}
+
+			&_img {
+			}
+
+			&_photo {
+			}
+
+			&_testimonial {
+			}
+
+			&_name {
+			}
+
+			&_post {
+			}
+
+			&_text {
+			}
+		}
+
+		&__control {
+
+			&_prev {
+			}
+
+			&_next {
+			}
+		}
+}
