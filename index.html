@@ -3,44 +3,86 @@
     <meta charset="utf-8">
     <title>ArduGraph</title>
     <link rel="shortcut icon" href="files/favic.ico">
-    <link rel="stylesheet" href="css/Style.css">
-    <link rel="stylesheet" href="help/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/css/index.css">
   </head>
 
-
-
-
   <body>
-    <header>
-      <a href="#">menu</a>
-      <div class="profileCont">
-        <a id="openProfile" href="#">Авторизоваться / Войти</a>
-        <a id="profileBut" href="#"><img src="files/profileBut.png" width="30" height="30"></a>
-      </div>
-    </header>
+    <header class="header">
 
+      <div class="container">
 
-    <div class="dP">
-      <div class="downloadPlace">
-        <h1 id="nameArdugraph">Ardugraph</h1>
-        <a id="downloadLinkTop" href="files/ArduGraph.exe" download>скачать</a>
-      </div>
-    </div>
+        <div class="header__content">
 
+          <div class="header__item header__item_left">
+  
+            <a href="/" class="header__logo logo">
+              <h1 class="logo__text">Ardugraph</h1>
+            </a>
+  
+          </div>
+  
+          <div class="header__item header__item_center">
+  
+            <nav class="nav">
+  
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="" class="nav__link">Docs</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Blog</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">FAQ</a>
+                </li>
+              </ul>
+  
+            </nav>
+  
+          </div>
+    
+          <div class="header__item header__item_end">
+  
+            <a href="files/ArduGraph.exe" class="header__button btn" download>
+              <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">
+              <span class="btn__text">Download</span>
+            </a>
+  
+          </div>
 
-    <div class="pV">
-      <div class="previewVideo">
-        <video id="video" src="files/preueVideo.mp4" controls>
-        </video>
-        <div class="welcomeToArdugraph">
-          <h1 id="welcome">Добро пожаловать в</h1>
-          <h1 id="toArdugraph">Ardugraph!</h1>
         </div>
       </div>
-      <section class="sectionHigh">
+        
+    </header>
+    <main class="main">
+
+      <section class="preview">
+        <div class="container">
+          <div class="preview__content">
+            <div class="preview__item">
+              <div class="preview__content-wrapper">
+                <h2 class="preview__title">Блочное программирование - Ardugraph!</h2>
+                <p class="preview__description">
+                  Сосредоточтесь на творчестве с помощью блочного редактора Ardugraph! 
+                  Cтройте блоки быстро и эффективно без излишеств
+                </p>
+                <a href="files/ArduGraph.exe" class="preview__button btn" download>
+                  <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">
+                  <span class="btn__text">Download</span>
+                </a>
+              </div>
+            </div>
+            <div class="preview__item">
+              <video width="100%" height="400" src="files/preueVideo.mp4" class="preview__media" autoplay loop></video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="sectionHigh">
         <svg id="waveHigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 30">
           <defs><style>.cls-1{fill:#fff;}</style></defs>
           <polygon class="cls-1" points="0 30 0 0 1080 0 328 15 0 30"/>
@@ -51,74 +93,75 @@
           <defs><style>.cls-2{fill:#82d1ff;}</style></defs>
           <polygon class="cls-2" points="1080 30 0 30 0 15 710 27 1080 0 1080 30"/>
         </svg>
-      </section>
-    </div>
-
-
-    <div class="pP">
-      <div class="plusesPlace">
-        <div class="plusPlaceHigh">
-          <h1 class="textPlusesHigh">Преимущества программы</h1>
-        </div>
-        <div class="plusPlace">
-          <div class="plusText1">
-            <h1 id="plusesTexts1">Просто и понятно</h1>
-            <p id="plusesTextsPar1">Не загружай голову океаном ненужных кнопок,
-              <br><br>Мы постарались включить в
-              Ardugraph только полезное!</p>
+      </section> -->
+  
+  
+      <div class="pP">
+        <div class="plusesPlace">
+          <div class="plusPlaceHigh">
+            <h1 class="textPlusesHigh">Преимущества программы</h1>
           </div>
-          <img id="imgPlus1" src="files/img1.png">
-        </div>
-
-        <div class="plusPlace">
-          <img id="imgPlus2" src="files/img2.png">
-          <div class="plusText2">
-            <h1 id="plusesTexts2">Собери по кирпичикам</h1>
-            <p id="plusesTextsPar2">Блочное программирование, как ни странно,
-              намного приятнее и эффективнее, чем чистый
-              кодинг.<br><br>
-              Не трать время, просто бери и делай!</p>
+          <div class="plusPlace">
+            <div class="plusText1">
+              <h1 id="plusesTexts1">Просто и понятно</h1>
+              <p id="plusesTextsPar1">Не загружай голову океаном ненужных кнопок,
+                <br><br>Мы постарались включить в
+                Ardugraph только полезное!</p>
+            </div>
+            <img id="imgPlus1" src="img/img1.png">
           </div>
-        </div>
-
-        <div class="plusPlace">
-          <div class="plusText3">
-            <h1 id="plusesTexts1">Больше чем просто блоки</h1>
-            <p id="plusesTextsPar1">Мы даём возможность:<br><br>
-              1 конвертировать блоки в код,<br><br>
-              2 добавлять различные библиотеки,<br><br>
-              3 открывать старые проекты,
-              написанные на языках
-              программирования.</p>
+  
+          <div class="plusPlace">
+            <img id="imgPlus2" src="img/img2.png">
+            <div class="plusText2">
+              <h1 id="plusesTexts2">Собери по кирпичикам</h1>
+              <p id="plusesTextsPar2">Блочное программирование, как ни странно,
+                намного приятнее и эффективнее, чем чистый
+                кодинг.<br><br>
+                Не трать время, просто бери и делай!</p>
+            </div>
           </div>
-          <img id="imgPlus3" src="files/img3.png">
-        </div>
-
-        <div class="plusPlace">
-          <img id="imgPlus4" src="files/img4.png">
-          <div class="plusText4">
-            <h1 id="plusesTexts2">Всех возрастов</h1>
-            <p id="plusesTextsPar2">Аудитория Ardugraph
-              это как начинающие программисты,
-              так и специалисты
-              среднего и высокого уровней.</p>
+  
+          <div class="plusPlace">
+            <div class="plusText3">
+              <h1 id="plusesTexts1">Больше чем просто блоки</h1>
+              <p id="plusesTextsPar1">Мы даём возможность:<br><br>
+                1 конвертировать блоки в код,<br><br>
+                2 добавлять различные библиотеки,<br><br>
+                3 открывать старые проекты,
+                написанные на языках
+                программирования.</p>
+            </div>
+            <img id="imgPlus3" src="img/img3.png">
+          </div>
+  
+          <div class="plusPlace">
+            <img id="imgPlus4" src="img/img4.png">
+            <div class="plusText4">
+              <h1 id="plusesTexts2">Всех возрастов</h1>
+              <p id="plusesTextsPar2">Аудитория Ardugraph
+                это как начинающие программисты,
+                так и специалисты
+                среднего и высокого уровней.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-
-    <div class="dP2">
-      <div class="downloadPlace2">
-        <div class=downloadPlace2Cont>
-          <p id="downloadH2">Начать работу в лучшей <br>программе на свете!</p>
-          <a id="downloadLinkBottom" href="files/ArduGraph.exe" download>Скачать Ardugraph<br> v1.0 (Win)</a>
-        </div>
-        <div id="downloadSup2">
-          <a href="https://vk.com/ardugraph">Связаться с нами</a>
+  
+  
+      <div class="dP2">
+        <div class="downloadPlace2">
+          <div class=downloadPlace2Cont>
+            <p id="downloadH2">Начать работу в лучшей <br>программе на свете!</p>
+            <a id="downloadLinkBottom" href="files/ArduGraph.exe" download>Скачать Ardugraph<br> v1.0 (Win)</a>
+          </div>
+          <div id="downloadSup2">
+            <a href="https://vk.com/ardugraph">Связаться с нами</a>
+          </div>
         </div>
       </div>
-    </div>
+
+    </main>
 
 
     <footer>
