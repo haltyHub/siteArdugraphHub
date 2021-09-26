@@ -184,10 +184,10 @@ body{
       }
         #plusesTexts1{
           text-transform: uppercase;
-          background: linear-gradient(45deg, #19979c 13%, #0D78BC 66%, #19979c);
           font-weight: 300;
           margin-right: 100px;
           font-size: 35px;
+          background: linear-gradient(45deg, #19979c 13%, #0D78BC 66%, #19979c);
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;

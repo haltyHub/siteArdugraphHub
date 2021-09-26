@@ -1,0 +1,103 @@
+.vantage {
+    background-color: #10101e;
+    color: #fff;
+    padding: 6rem 0;
+
+    &__title {
+        background: linear-gradient(45deg, #ff0ebd 13%, #0D78BC 66%, #FF22A4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $font;
+        font-size: calc(2.1em + 16 * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 400;
+        margin-bottom: 1em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    &__item {
+        align-items: center;
+        display: flex;
+        flex: 1 1 auto;
+        padding: 1rem;
+            
+        &_img--first {
+            flex-basis: 600px;
+        }
+        
+        &_img--second {
+            flex-basis: 500px;
+        }
+        
+        &_img--third {
+            flex-basis: 300px;
+            
+        }
+
+        &_img--fourth {
+            flex-basis: 400px;
+
+            img {
+                width: 400px;
+            }
+        }
+        
+    }
+
+    &__text {
+        width: 100%;
+        max-width: 430px;
+
+        &_align_right {
+            text-align: right;
+            margin-left: auto;
+        }
+    }
+    
+    &__subtitle {
+        background: linear-gradient(45deg, #19979c 13%, #0D78BC 66%, #19979c);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #fff;
+        font-family: $font;
+        font-size: calc(1.8em + 16 * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 300;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        // word-break: break-all;
+    }
+    
+    &__description {
+        color: #fff;
+        font-family: $font;
+        font-size: 25px; //calc(.8em + 16 * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 300;
+        word-break: break-word;
+        line-height: 1.4;
+    }
+    
+    &__list {
+        font-family: $font;
+        font-size: 25px;
+        font-weight: 300;
+        margin-left: 1em;
+
+        &-item {
+
+        }
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 2rem;
+    }
+}
