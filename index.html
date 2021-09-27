@@ -8,11 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/css/index.css">
+    <!-- Раскоментить для работы слайдера -->
+    <!-- <link rel="stylesheet" href="styles/css/simple-adaptive-slider.min.css">
+    
+    <script defer src="js/simple-adaptive-slider.min.js"></script> -->
   </head>
 
   <body>
-    <header class="header">
 
+    <nav id="mobileMenu" class="nav">
+  
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">О нас</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Документация</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Блог</a>
+        </li>
+        <li class="nav__item">
+          <a href="#footer" class="nav__link">Контакты</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">FAQ</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <header class="header">
+      
       <div class="container">
 
         <div class="header__content">
@@ -20,7 +47,7 @@
           <div class="header__item header__item_left">
   
             <a href="/" class="header__logo logo">
-              <h1 class="logo__text">Ardugraph</h1>
+              <span class="logo__text">Ardugraph</span>
             </a>
   
           </div>
@@ -31,13 +58,19 @@
   
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="" class="nav__link">Docs</a>
+                  <a href="#" class="nav__link">О нас</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Blog</a>
+                  <a href="#" class="nav__link">Документация</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">FAQ</a>
+                  <a href="#" class="nav__link">Блог</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#footer" class="nav__link">Контакты</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">FAQ</a>
                 </li>
               </ul>
   
@@ -51,6 +84,14 @@
               <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">
               <span class="btn__text">Download</span>
             </a>
+
+            <button class="menu" aria-label="Main Menu" aria-expanded="false">
+              <svg width="50" height="50" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+              </svg>
+            </button>
   
           </div>
 
@@ -58,14 +99,21 @@
       </div>
         
     </header>
+
     <main class="main">
 
       <section class="preview">
+
+        <div class="preview__overlay"></div>
+        
         <div class="container">
+          
           <div class="preview__content">
+            
             <div class="preview__item">
+              
               <div class="preview__content-wrapper">
-                <h2 class="preview__title">Блочное программирование - Ardugraph!</h2>
+                <h1 class="preview__title">Блочное программирование - Ardugraph!</h1>
                 <p class="preview__description">
                   Сосредоточтесь на творчестве с помощью блочного редактора Ardugraph! 
                   Cтройте блоки быстро и эффективно без излишеств
@@ -75,10 +123,13 @@
                   <span class="btn__text">Download</span>
                 </a>
               </div>
+
             </div>
-            <div class="preview__item">
-              <video width="100%" height="400" src="files/preueVideo.mp4" class="preview__media" autoplay loop></video>
+            
+            <div class="preview__item preview__item_media">
+              <video class="preview__video" width="100%" height="400" src="files/preueVideo.mp4" autoplay loop></video>
             </div>
+
           </div>
         </div>
       </section>
@@ -94,59 +145,140 @@
           <polygon class="cls-2" points="1080 30 0 30 0 15 710 27 1080 0 1080 30"/>
         </svg>
       </section> -->
-  
-  
-      <div class="pP">
-        <div class="plusesPlace">
-          <div class="plusPlaceHigh">
-            <h1 class="textPlusesHigh">Преимущества программы</h1>
-          </div>
-          <div class="plusPlace">
-            <div class="plusText1">
-              <h1 id="plusesTexts1">Просто и понятно</h1>
-              <p id="plusesTextsPar1">Не загружай голову океаном ненужных кнопок,
-                <br><br>Мы постарались включить в
-                Ardugraph только полезное!</p>
+      <section class="vantage">
+        <div class="container">
+          <h2 class="vantage__title">Преимущества программы</h2>
+          <div class="vantage__content">
+            <div class="vantage__item">
+              <div class="vantage__text vantage__text_align">
+                <h3 class="vantage__subtitle">Просто и понятно</h3>
+                <p class="vantage__description">
+                  Не загружай голову океаном ненужных кнопок
+                  мы постарались включить в Ardugraph только полезное!
+                </p>
+              </div>
             </div>
-            <img id="imgPlus1" src="img/img1.png">
-          </div>
-  
-          <div class="plusPlace">
-            <img id="imgPlus2" src="img/img2.png">
-            <div class="plusText2">
-              <h1 id="plusesTexts2">Собери по кирпичикам</h1>
-              <p id="plusesTextsPar2">Блочное программирование, как ни странно,
-                намного приятнее и эффективнее, чем чистый
-                кодинг.<br><br>
-                Не трать время, просто бери и делай!</p>
+            <div class="vantage__item vantage__item_img--first">
+              <img class="vantage__img" src="img/img1.png">
             </div>
-          </div>
-  
-          <div class="plusPlace">
-            <div class="plusText3">
-              <h1 id="plusesTexts1">Больше чем просто блоки</h1>
-              <p id="plusesTextsPar1">Мы даём возможность:<br><br>
-                1 конвертировать блоки в код,<br><br>
-                2 добавлять различные библиотеки,<br><br>
-                3 открывать старые проекты,
-                написанные на языках
-                программирования.</p>
+            <div class="vantage__item vantage__item_img--second">
+              <img class="vantage__img" src="img/img2.png">
             </div>
-            <img id="imgPlus3" src="img/img3.png">
-          </div>
-  
-          <div class="plusPlace">
-            <img id="imgPlus4" src="img/img4.png">
-            <div class="plusText4">
-              <h1 id="plusesTexts2">Всех возрастов</h1>
-              <p id="plusesTextsPar2">Аудитория Ardugraph
-                это как начинающие программисты,
-                так и специалисты
-                среднего и высокого уровней.</p>
+            <div class="vantage__item">
+              <div class="vantage__text vantage__text_align_right">
+                <h3 class="vantage__subtitle">Собери по кирпичикам</h3>
+                <p class="vantage__description">
+                  Блочное программирование, как ни странно, намного приятнее и эффективнее, чем чистый кодинг. 
+                  Не трать время, просто бери и делай!
+                </p>
+              </div>
+            </div>
+            <div class="vantage__item">
+              <div class="vantage__text vantage__text_align">
+                <h3 class="vantage__subtitle">Больше чем просто блоки</h3>
+                <p class="vantage__description">
+                  Мы даём возможность:
+                  <ol class="vantage__list">
+                    <li class="vantage__list-item">конвертировать блоки в код,</li>
+                    <li class="vantage__list-item">добавлять различные библиотеки,</li>
+                    <li class="vantage__list-item">открывать старые проекты, написанные на языках программирования</li>
+                  </ol>
+                </p>
+              </div>
+            </div>
+            <div class="vantage__item vantage__item_img--third">
+              <img class="vantage__img" src="img/img3.png">
+            </div>
+            <div class="vantage__item vantage__item_img--fourth">
+              <img class="vantage__img" src="img/img4.png">
+            </div>
+            <div class="vantage__item">
+              <div class="vantage__text vantage__text_align_right">
+                <h3 class="vantage__subtitle">Подходит всем</h3>
+                <p class="vantage__description">
+                  Аудитория Ardugraph
+                  это как начинающие программисты,
+                  так и специалисты
+                  среднего и высокого уровней.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      
+      <!-- Секция отзывов со слайдером  -->
+      <!-- <section class="feedback">
+        
+        <div class="container">
+
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__items">
+                <div class="slider__item">
+                  <div class="slider__item_inner">
+                    <span class="slider__item_img">
+                      <img class="slider__item_photo" src="https://via.placeholder.com/150" alt="">
+                    </span>
+                    <span class="slider__item_testimonial">
+                      <span class="slider__item_name">Ismael Matsuura</span>
+                      <span class="slider__item_post">Web Developer</span>
+                      <span class="slider__item_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil quo molestiae perspiciatis qui vero?
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__item_inner">
+                    <span class="slider__item_img">
+                      <img src="https://via.placeholder.com/150" alt="">
+                    </span>
+                    <span class="slider__item_testimonial">
+                      <span class="slider__item_name">Lawanda Batchelder</span>
+                      <span class="slider__item_post">Web Designer</span>
+                      <span class="slider__item_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil quo molestiae perspiciatis qui vero?
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__item_inner">
+                    <span class="slider__item_img">
+                      <img src="https://via.placeholder.com/150" alt="">
+                    </span>
+                    <span class="slider__item_testimonial">
+                      <span class="slider__item_name">Bennett Arbogast</span>
+                      <span class="slider__item_post">Web Developer</span>
+                      <span class="slider__item_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil quo molestiae perspiciatis qui vero?
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__item_inner">
+                    <span class="slider__item_img">
+                      <img src="https://via.placeholder.com/150" alt="">
+                    </span>
+                    <span class="slider__item_testimonial">
+                      <span class="slider__item_name">Shanna Parcell</span>
+                      <span class="slider__item_post">Web Designer</span>
+                      <span class="slider__item_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil quo molestiae perspiciatis qui vero?
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+            <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+          </div>
+
+        </div>
+      </section> -->
   
   
       <div class="dP2">
@@ -164,7 +296,7 @@
     </main>
 
 
-    <footer>
+    <footer id="footer">
       <div class="foot">
         <a class="footItem" href="#">NewGCorp</a>
         <a class="footItem" href="files/ArduGraph.exe" download>Скачать</a>
