@@ -2,7 +2,7 @@
     align-items: center;
     background: url('../../img/head1.png') no-repeat center / cover;
     display: flex;
-    height: 50vh;
+    height: 70vh;
     position: relative;
     z-index: 0;
     
@@ -27,11 +27,10 @@
     }
 
     &__item {
-        display: flex;
         align-items: center;
-        flex: 1 1 auto;
+        display: flex;
         justify-content: center;
-        
+        flex: 1 1 auto;
         
         &_media {
             flex-basis: 550px;
@@ -57,7 +56,7 @@
     &__title {
         color: #fff;
         font-family: "Roboto", Arial, Helvetica, sans-serif;
-        font-size: calc(1.7em + 16 * ((100vw - 320px) / (1920 - 320)));;
+        font-size: calc(2.3em + 16 * ((100vw - 320px) / (1920 - 320)));;
         font-weight: 400;
     }
     

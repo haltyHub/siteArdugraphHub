@@ -19,7 +19,6 @@
 
         &_left {
             flex-grow: 1;
-            
         }
 
         &_center {
@@ -39,7 +38,7 @@
         align-items: flex-end;
         display: none;
 
-        @media (min-width: 768px) {
+        @media (min-width: 790px) {
             display: flex;
         }
     }
@@ -56,6 +55,7 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
 .nav {
     display: none;
 

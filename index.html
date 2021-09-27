@@ -1,17 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>ArduGraph</title>
+    
+    <!-- Theme and favicon meta tags -->
     <link rel="shortcut icon" href="files/favic.ico">
+    
+    <!-- OG Tags -->
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/css/index.css">
-    <!-- Раскоментить для работы слайдера -->
-    <!-- <link rel="stylesheet" href="styles/css/simple-adaptive-slider.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/css/index.css">
+
+    <!-- Раскоментить для работы слайдера -->
+    
+    <!-- <link rel="stylesheet" href="styles/css/simple-adaptive-slider.min.css"> 
     <script defer src="js/simple-adaptive-slider.min.js"></script> -->
+
+    <!-- Яндекс метрика, Google Analitics, Facebook pixel, etc -->
+
   </head>
 
   <body>
@@ -33,6 +48,9 @@
         </li>
         <li class="nav__item">
           <a href="#" class="nav__link">FAQ</a>
+        </li>
+        <li class="nav__item">
+          <a href="#product" class="nav__link">Скачать</a>
         </li>
       </ul>
 
@@ -80,9 +98,9 @@
     
           <div class="header__item header__item_end">
   
-            <a href="files/ArduGraph.exe" class="header__button btn" download>
+            <a href="#product" class="header__button btn">
               <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">
-              <span class="btn__text">Download</span>
+              <span class="btn__text">Скачать</span>
             </a>
 
             <button class="menu" aria-label="Main Menu" aria-expanded="false">
@@ -118,9 +136,9 @@
                   Сосредоточтесь на творчестве с помощью блочного редактора Ardugraph! 
                   Cтройте блоки быстро и эффективно без излишеств
                 </p>
-                <a href="files/ArduGraph.exe" class="preview__button btn" download>
+                <a href="#product" class="preview__button btn">
                   <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">
-                  <span class="btn__text">Download</span>
+                  <span class="btn__text">Скачать</span>
                 </a>
               </div>
 
@@ -133,22 +151,15 @@
           </div>
         </div>
       </section>
-      <!-- <section class="sectionHigh">
-        <svg id="waveHigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 30">
-          <defs><style>.cls-1{fill:#fff;}</style></defs>
-          <polygon class="cls-1" points="0 30 0 0 1080 0 328 15 0 30"/>
-        </svg>
-      </section>
-      <section class="sectionSub">
-        <svg id="waveSub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 30">
-          <defs><style>.cls-2{fill:#82d1ff;}</style></defs>
-          <polygon class="cls-2" points="1080 30 0 30 0 15 710 27 1080 0 1080 30"/>
-        </svg>
-      </section> -->
+
       <section class="vantage">
+
         <div class="container">
+
           <h2 class="vantage__title">Преимущества программы</h2>
+
           <div class="vantage__content">
+
             <div class="vantage__item">
               <div class="vantage__text vantage__text_align">
                 <h3 class="vantage__subtitle">Просто и понятно</h3>
@@ -158,12 +169,15 @@
                 </p>
               </div>
             </div>
+
             <div class="vantage__item vantage__item_img--first">
               <img class="vantage__img" src="img/img1.png">
             </div>
+
             <div class="vantage__item vantage__item_img--second">
               <img class="vantage__img" src="img/img2.png">
             </div>
+
             <div class="vantage__item">
               <div class="vantage__text vantage__text_align_right">
                 <h3 class="vantage__subtitle">Собери по кирпичикам</h3>
@@ -173,6 +187,7 @@
                 </p>
               </div>
             </div>
+
             <div class="vantage__item">
               <div class="vantage__text vantage__text_align">
                 <h3 class="vantage__subtitle">Больше чем просто блоки</h3>
@@ -186,12 +201,15 @@
                 </p>
               </div>
             </div>
+
             <div class="vantage__item vantage__item_img--third">
               <img class="vantage__img" src="img/img3.png">
             </div>
+
             <div class="vantage__item vantage__item_img--fourth">
               <img class="vantage__img" src="img/img4.png">
             </div>
+
             <div class="vantage__item">
               <div class="vantage__text vantage__text_align_right">
                 <h3 class="vantage__subtitle">Подходит всем</h3>
@@ -203,7 +221,9 @@
                 </p>
               </div>
             </div>
+
           </div>
+
         </div>
       </section>
       
@@ -211,6 +231,8 @@
       <!-- <section class="feedback">
         
         <div class="container">
+
+          <h2 class="feedback__title">Отзывы пользователей</h2>
 
           <div class="slider">
             <div class="slider__wrapper">
@@ -232,7 +254,7 @@
                 <div class="slider__item">
                   <div class="slider__item_inner">
                     <span class="slider__item_img">
-                      <img src="https://via.placeholder.com/150" alt="">
+                      <img class="slider__item_photo" src="https://via.placeholder.com/150" alt="">
                     </span>
                     <span class="slider__item_testimonial">
                       <span class="slider__item_name">Lawanda Batchelder</span>
@@ -246,7 +268,7 @@
                 <div class="slider__item">
                   <div class="slider__item_inner">
                     <span class="slider__item_img">
-                      <img src="https://via.placeholder.com/150" alt="">
+                      <img class="slider__item_photo" src="https://via.placeholder.com/150" alt="">
                     </span>
                     <span class="slider__item_testimonial">
                       <span class="slider__item_name">Bennett Arbogast</span>
@@ -260,7 +282,7 @@
                 <div class="slider__item">
                   <div class="slider__item_inner">
                     <span class="slider__item_img">
-                      <img src="https://via.placeholder.com/150" alt="">
+                      <img class="slider__item_photo" src="https://via.placeholder.com/150" alt="">
                     </span>
                     <span class="slider__item_testimonial">
                       <span class="slider__item_name">Shanna Parcell</span>
@@ -279,31 +301,180 @@
 
         </div>
       </section> -->
+
+      <section class="product" id="product">
+        <div class="container">
+          <h2 class="product__title">Скачать для своей платформы</h2>
+          <p class="product__description">
+            * на данный момент <strong>доступна только версия для Windows</strong> появятся ли остальные версии зависит от вашей поддержки =)
+          </p>
+          
+          <div class="product__content">
   
+            <div class="product__item">
   
-      <div class="dP2">
-        <div class="downloadPlace2">
-          <div class=downloadPlace2Cont>
-            <p id="downloadH2">Начать работу в лучшей <br>программе на свете!</p>
-            <a id="downloadLinkBottom" href="files/ArduGraph.exe" download>Скачать Ardugraph<br> v1.0 (Win)</a>
+              <div class="product__card product__card_disabled platform">
+                
+                <div class="platform__header">
+                  <img width="200" height="200" src="img/linux-logo.png" alt="Platform image" class="platfotm__img">
+                </div>
+
+                <div class="plarform__body">
+                  <!-- if ready Add link and attribute "download" -->
+                  <a href="#" class="plarform__button btn" >
+                    <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">
+                    <span class="btn__text">.deb</span>
+                    <span class="btn__plarform-name">Ubuntu</span>
+                    <span class="btn__plarform-name">Debian</span>
+                  </a>
+  
+                </div>
+
+                <div class="platform__footer">
+                  
+                  <span class="platform__installer">
+                    <span>.deb: </span> 
+                    <span class="platform__version">
+                      <a href="#">64 bit</a>
+                      <a href="#">32 bit</a>
+                      <a href="#">ARM</a>
+                    </span>
+                  </span>
+
+                </div>
+
+              </div>
+  
+            </div>
+  
+            <div class="product__item">
+  
+              <div class="product__card platform">
+                <div class="platform__header">
+                  <img width="200" height="200" src="img/windows-logo.png" alt="Platform image" class="platfotm__img">
+                </div>
+                <div class="plarform__body">
+  
+                  <a href="files/ArduGraph.exe" class="plarform__button btn" download>
+                    <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">
+                    <span class="btn__text">Windows</span>
+                    <span class="btn__plarform-name">7, 8, 10</span>
+                  </a>
+  
+                </div>
+                <div class="platform__footer platform__footer_windows">
+                  <span class="platform__installer">
+                    <span>User installer: </span> 
+                    <span class="platform__version">
+                      <a href="#">64 bit</a>
+                      <!-- <a href="#">32 bit</a>
+                      <a href="#">ARM</a> -->
+                    </span>
+                  </span>
+                  <!-- <span class="platform__installer">
+                    <span>System installer: </span>
+                    <span class="platform__version">
+                      <a href="#">64 bit</a>
+                      <a href="#">32 bit</a>
+                      <a href="#">ARM</a>
+                    </span>
+                  </span>
+                  <span class="platform__installer">
+                    <span>.zip: </span>
+                    <span class="platform__version">
+                      <a href="#">64 bit</a>
+                      <a href="#">32 bit</a>
+                      <a href="#">ARM</a>
+                    </span>
+                  </span> -->
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="product__item">
+  
+              <div class="product__card product__card_disabled platform" >
+                <div class="platform__header">
+                  <img width="200" height="200" src="img/icons/apple-logo.svg" alt="Platform image" class="platfotm__img">
+                </div>
+                <div class="plarform__body">
+                  <!-- if ready Add link and attribute "download" -->
+                  <a href="#" class="plarform__button btn">
+                    <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">
+                    <span class="btn__text">Mac</span>
+                    <span class="btn__plarform-name">macOS 10.11+</span>
+                  </a>
+  
+                </div>
+                <div class="platform__footer">
+                  <span class="platform__installer">
+                    <span>.zip: </span>
+                    <span class="platform__version">
+                      <a href="#">Universal</a>
+                      <a href="#">Intel Chip</a>
+                      <a href="#">Apple Silicon</a>
+                    </span>
+                  </span>
+                </div>
+              </div>
+  
+            </div>
+  
           </div>
-          <div id="downloadSup2">
-            <a href="https://vk.com/ardugraph">Связаться с нами</a>
-          </div>
+
         </div>
-      </div>
+      </section>
 
     </main>
 
+    <footer class="footer" id="footer">
+      <div class="container">
 
-    <footer id="footer">
-      <div class="foot">
-        <a class="footItem" href="#">NewGCorp</a>
-        <a class="footItem" href="files/ArduGraph.exe" download>Скачать</a>
-        <a class="footItem" href="https://vk.com/ardugraph">Поддержка</a>
+        <div class="footer__content">
+
+          <div class="footer__item">
+            <span class="footer__copyright">&copy; - NewGCorp 2021</span>
+          </div>
+
+          <div class="footer__item">
+
+            <div class="footer__social">
+              <a href="https://vk.com/ardugraph" class="footer__link footer__link_vk">
+                <div class="footer__icon footer__icon_vk"></div>
+              </a>
+              <a href="#" class="footer__link footer__link_youtube">
+								<div class="footer__icon footer__icon_youtube"></div>
+							</a>
+              <a href="#" class="footer__link footer__link_inst">
+								<div class="footer__icon footer__icon_inst"></div>
+							</a>
+              <a href="#" class="footer__link footer__link_tg">
+                <div class="footer__icon footer__icon_tg"></div>
+              </a>
+            </div>
+
+          </div>
+          
+          <div class="footer__item">
+
+            <div class="footer__info">
+
+              <a class="footer__link footer__link_support" href="mailto:ardugraph@vk.com">Поддержка</a>
+              
+              <div class="thaksAdn">
+                <span class="thaksAdn__text">Thanks for help develop this website:</span>
+                <a class="thaksAdn__link" href="https://github.com/Daulet070">ADN</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
     </footer>
-
 
     <script src="js/script.js"></script>
   </body>
