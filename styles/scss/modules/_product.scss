@@ -1,0 +1,90 @@
+.product {
+    background-color: #ffffff;
+    padding: 3rem 0;
+
+    &__title {
+        color: #000;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: .6em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    &__description {
+        color: #000;
+        font-size: 16px;
+        font-weight: 100;
+        margin-bottom: .6em;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &__item {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex: 1 1 auto;
+
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &_disabled {
+            filter: opacity(0.5);
+            pointer-events: none;
+        }
+    }
+}
+
+.platform {
+
+    &__header {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__footer {
+        &_windows {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+    }
+
+    // &__installer {
+    // }
+
+    &__img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    // &__body {
+    // }
+
+    // &__button {
+    // }
+}
+// .btn {
+
+//     &__icon {
+//     }
+
+//     &__text {
+//     }
+
+//     &__plarform-name {
+//     }
+// }
