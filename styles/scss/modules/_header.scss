@@ -1,5 +1,8 @@
 .header {
     background-color: #ffffff;
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
     padding: .5rem 0;
     position: sticky;
     top: 0;
@@ -31,7 +34,7 @@
     }
 
     &__logo {
-        font-size: 24px;
+        font-size: calc(1em + 16 * ((100vw - 320px) / (1920 - 320))); 
     }
 
     &__button {
@@ -93,14 +96,15 @@
         text-decoration: none;
         text-transform: uppercase;
         width: 100%;
-
+        
         &:hover {
             background-color: rgba($color: #ddd, $alpha: 0.9);
         }
-
         
-        @media (min-width: 425px) {
+        
+        @media (min-width: 769px) {
             width: fit-content;
+            font-size: calc(.6em + 16 * ((100vw - 320px) / (2560 - 320)));
         }
     }
 }

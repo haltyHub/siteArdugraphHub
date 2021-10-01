@@ -19,7 +19,7 @@ main {
 }
 
 h1 {
-	font-size: 2em;
+	// font-size: 2em;
 	margin: 0
 }
 
@@ -248,7 +248,7 @@ template {
 body {
   box-sizing: border-box;
   font-family: $font;
-  font-size: 14px;
+  font-size: $fontSize;
   font-weight: 400;
   position: relative;
   margin: 0;
@@ -273,6 +273,10 @@ textarea:focus {
 	margin: 0 auto;
 	
 	@media (min-width: 375px) {
+		padding: 0px 15px;
+	}
+	@media (min-width: 2560px) {
+		max-width: calc(1900px + 40px);
 		padding: 0px 15px;
 	}
 }

@@ -3,7 +3,7 @@
   background-color: peachpuff;
 
   &__title {
-    font-size: 30px;
+    font-size: calc(2.1em + 16 * ((100vw - 320px) / (2560 - 320)));
     font-weight: 400;
     margin-bottom: 1.5em;
     text-transform: uppercase;
