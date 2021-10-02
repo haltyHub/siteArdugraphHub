@@ -6,22 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>ArduGraph</title>
+    <meta name="description" content="Сосредоточтесь на творчестве с помощью блочного редактора Ardugraph! Cтройте блоки быстро и эффективно без излишеств">
+    <meta name="keywords" content="Блочное программирвание, визуальный скриптинг, IDE, редактор, Ardugraph, blueprints">
     
     <!-- Theme and favicon meta tags -->
-    <link rel="shortcut icon" href="files/favic.ico">
+    <meta name="theme-color" content="#317EFB"/>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="img/favic.ico">
+    <link rel="apple-touch-icon" href="img/ardu_192.png">
     
     <!-- OG Tags -->
-    
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Ardugraph">
+    <meta property="og:image" content="img/img2.png">
+    <meta property="og:title" content="ArduGraph">
+    <meta property="og:description" content="Сосредоточтесь на творчестве с помощью блочного редактора Ardugraph! Cтройте блоки быстро и эффективно без излишеств">
+    <meta property="og:url" content="https://newgcorp.ru/ardugraph">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/css/index.css">
+    <link rel="stylesheet" href="styles/css/style.min.css">
 
     <!-- Раскоментить для работы слайдера -->
-    
     <!-- <link rel="stylesheet" href="styles/css/simple-adaptive-slider.min.css"> 
     <script defer src="js/simple-adaptive-slider.min.js"></script> -->
 
@@ -145,7 +156,7 @@
             </div>
             
             <div class="preview__item preview__item_media">
-              <video class="preview__video" width="100%" height="400" src="files/preueVideo.mp4" autoplay loop></video>
+              <!-- <video class="preview__video" width="100%" height="400" src="files/preueVideo.mp4" autoplay loop></video> -->
             </div>
 
           </div>
@@ -171,11 +182,17 @@
             </div>
 
             <div class="vantage__item vantage__item_img--first">
-              <img class="vantage__img" src="img/img1.png">
+              <picture>
+                <source srcset="img/webp/img1_converted.webp" type="image/webp">
+                <img class="vantage__img" src="img/img1.png" alt="Ardugraph project initial interface">
+              </picture>
             </div>
-
+            
             <div class="vantage__item vantage__item_img--second">
-              <img class="vantage__img" src="img/img2.png">
+              <picture>
+                <source srcset="img/webp/img2_converted.webp" type="image/webp">
+                <img class="vantage__img" src="img/img2.png" alt="Ardugraph work space interface">
+              </picture>
             </div>
 
             <div class="vantage__item">
@@ -203,11 +220,17 @@
             </div>
 
             <div class="vantage__item vantage__item_img--third">
-              <img class="vantage__img" src="img/img3.png">
+              <picture>
+                <source srcset="img/webp/img3_converted.webp" type="image/webp">
+                <img class="vantage__img" src="img/img3.png" alt="Ardugraph capabilityes">
+              </picture>
             </div>
 
             <div class="vantage__item vantage__item_img--fourth">
-              <img class="vantage__img" src="img/img4.png">
+              <picture>
+                <source srcset="img/webp/img4_converted.webp" type="image/webp">
+                <img class="vantage__img" src="img/img4.png" alt="Ardugraph for all ages">
+              </picture>
             </div>
 
             <div class="vantage__item">
@@ -316,10 +339,13 @@
               <div class="product__card product__card_disabled platform">
                 
                 <div class="platform__header">
-                  <img width="200" height="200" src="img/linux-logo.png" alt="Platform image" class="platfotm__img">
+                  <picture>
+                    <source srcset="img/webp/linux-logo_converted.webp" type="image/webp">
+                    <img width="200" height="200" src="img/linux-logo.png" alt="Platform image" class="platfotm__img">
+                  </picture>
                 </div>
 
-                <div class="plarform__body">
+                <div class="platform__body">
                   <!-- if ready Add link and attribute "download" -->
                   <a href="#" class="plarform__button btn" >
                     <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">
@@ -351,9 +377,12 @@
   
               <div class="product__card platform">
                 <div class="platform__header">
-                  <img width="200" height="200" src="img/windows-logo.png" alt="Platform image" class="platfotm__img">
+                  <picture>
+                    <source srcset="img/webp/windows-logo_converted.webp" type="image/webp">
+                    <img width="200" height="200" src="img/windows-logo.png" alt="Platform image" class="platfotm__img">
+                  </picture>
                 </div>
-                <div class="plarform__body">
+                <div class="platform__body">
   
                   <a href="files/ArduGraph.exe" class="plarform__button btn" download>
                     <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">
@@ -366,9 +395,9 @@
                   <span class="platform__installer">
                     <span>User installer: </span> 
                     <span class="platform__version">
-                      <a href="#">64 bit</a>
-                      <!-- <a href="#">32 bit</a>
-                      <a href="#">ARM</a> -->
+                      <a href="files/ArduGraph.exe">64 bit</a>
+                      <a href="#">32 bit</a>
+                      <a href="#">ARM</a>
                     </span>
                   </span>
                   <!-- <span class="platform__installer">
@@ -398,7 +427,7 @@
                 <div class="platform__header">
                   <img width="200" height="200" src="img/icons/apple-logo.svg" alt="Platform image" class="platfotm__img">
                 </div>
-                <div class="plarform__body">
+                <div class="platform__body">
                   <!-- if ready Add link and attribute "download" -->
                   <a href="#" class="plarform__button btn">
                     <img src="img/icons/download-white.svg" alt="Download icon" class="btn__icon">

@@ -4,7 +4,7 @@
 
     &__title {
         color: #000;
-        font-size: 30px;
+        font-size: calc(1.8em + 16 * ((100vw - 320px) / (2560 - 320)));
         font-weight: 400;
         margin-bottom: .6em;
         text-align: center;
@@ -13,7 +13,7 @@
     
     &__description {
         color: #000;
-        font-size: 16px;
+        font-size: calc(1em + 16 * ((100vw - 320px) / (2560 - 320)));
         font-weight: 100;
         margin-bottom: .6em;
         text-align: center;
@@ -53,11 +53,23 @@
         justify-content: center;
     }
 
+    &__body {
+        display: flex;
+        justify-content: center;
+    }
+
     &__footer {
         &_windows {
             display: flex;
             flex-direction: column;
             gap: .5rem;
+        }
+    }
+
+    &__version {
+        a:not(:first-child) {
+            filter: opacity(0.5);
+            pointer-events: none;
         }
     }
 
@@ -71,11 +83,10 @@
         border-radius: 0;
     }
 
-    // &__body {
-    // }
 
-    // &__button {
-    // }
+    &__button {
+        width: fit-content;
+    }
 }
 // .btn {
 

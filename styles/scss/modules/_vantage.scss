@@ -10,7 +10,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: $font;
-        font-size: calc(2.1em + 16 * ((100vw - 320px) / (1920 - 320)));
+        font-size: calc(2.1em + 16 * ((100vw - 320px) / (2560 - 320)));
         font-weight: 400;
         margin-bottom: 2em;
         text-align: center;
@@ -29,28 +29,41 @@
         flex: 1 1 auto;
         flex-direction: column;
         padding: 0.25rem 0;
+
+        picture {
+            margin: 0 auto;
+        }
         
         @media (min-width: 788px) {
             flex: 1 1 calc(50% - 1rem);
             flex-direction: row;
         }
 
-        &_img--fourth {
+        // &_img--third {
+        //     flex-basis: 220px;
+        // }
 
-            img {
-                max-width: 400px;
-            }
-        }
+        // &_img--fourth {
+        //     flex-basis: 220px;
+        //     // img {
+        //     //     max-width: 400px;
+        //     // }
+        // }
         
     }
 
     &__text {
         width: 100%;
+        text-align: center;
 
-        &_align_right {
-            text-align: right;
-            margin-left: auto;
+        @media (min-width: 780px) {
+            text-align: left;
+            &_align_right {
+                text-align: right;
+                margin-left: auto;
+            }
         }
+
     }
     
     &__subtitle {
@@ -60,7 +73,7 @@
         -webkit-text-fill-color: transparent;
         color: #fff;
         font-family: $font;
-        font-size: calc(1.8em + 16 * ((100vw - 320px) / (1920 - 320)));
+        font-size: calc(1.8em + 16 * ((100vw - 320px) / (2560 - 320)));
         font-weight: 300;
         margin-bottom: 0.5em;
         text-transform: uppercase;
@@ -69,16 +82,17 @@
     &__description {
         color: #fff;
         font-family: $font;
-        font-size:  calc(1.1em + 16 * ((100vw - 320px) / (1920 - 320))); // ~25px;
+        font-size:  calc(1em + 16 * ((100vw - 320px) / (2560 - 320))); // ~25px;
         font-weight: 100;
         line-height: 1.4;
     }
     
     &__list {
         font-family: $font;
-        font-size: calc(1.1em + 16 * ((100vw - 320px) / (1920 - 320)));
+        font-size: calc(1em + 16 * ((100vw - 320px) / (2560 - 320)));
         font-weight: 100;
         margin-left: 1em;
+        text-align: left;
 
         // &-item {
 

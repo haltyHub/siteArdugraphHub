@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mobileMenuBtn = document.querySelector('.menu');
     const mobileMenuOverlay = document.querySelector('#mobileMenu');
+    const videoContainer = document.querySelector('.preview__item_media');
+
+    const video = `
+        <video class="preview__video" width="100%" height="400" src="files/preueVideo.mp4" autoplay loop></video>
+    `;
+
+    videoContainer.insertAdjacentHTML('afterbegin', video);
 
     // Инициализация слайдера
     // const slider = new SimpleAdaptiveSlider('.slider', {
